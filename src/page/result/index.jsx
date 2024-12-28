@@ -42,9 +42,9 @@ function ResultPage() {
             <br />
             2025년 운세는
           </div>
-          <div className="relative flex justify-center break-keep items-center fortune_msg text-2xl text-center py-5 px-4 min-h-[230px] text-[#121212] bg-white rounded-lg whitespace-break-spaces shadow-md underline">
-            {data}
+          <div className="relative flex decoration-[#7d7d7d] justify-center break-keep items-center fortune_msg text-2xl text-center py-5 px-4 min-h-[230px] text-[#121212] bg-white rounded-lg whitespace-break-spaces shadow-md underline">
             <img src={cardBg} alt="" className="center" />
+            {data}
           </div>
           <footer className="text-center absolute bottom-5 left-1/2 -translate-x-1/2 text-[#624712]">
             Happy New Year
