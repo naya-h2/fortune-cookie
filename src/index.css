@@ -2,8 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Ownglyph_ParkDaHyun';
+  src: url('./font/온글잎 박다현체.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ownglyph_RyuRyu';
+  src: url('./font/온글잎 류류체.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: 'Ownglyph_ParkDaHyun', 'Ownglyph_RyuRyu';
+  background-color: #ffe7b680;
+}
+
+.mobile_layout {
+  max-width: 480px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.descr {
+  color: #fdfdfd;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7d5300;
+}
+
+.title {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7d5300;
+
+  background: linear-gradient(90deg, rgba(255, 213, 140, 0.5) 0%, rgba(255, 170, 0, 0.5) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  color: #fdfdfd;
+
+  border-radius: 12px;
+  background: #fa0;
+  padding: 12px 20px;
+}
+
+button:disabled {
+  background-color: #d9d9d9;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading_desc {
+  color: rgba(255, 170, 0, 0.5);
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #7d5300;
+}
+
+.fortune_msg {
+  font-family: 'Ownglyph_RyuRyu';
 }
