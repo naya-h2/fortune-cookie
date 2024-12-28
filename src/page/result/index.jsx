@@ -23,7 +23,7 @@ function ResultPage() {
 
   useEffect(() => {
     if (isLoading) setTimeout(handleFortunePost, 700);
-  }, []);
+  }, [isLoading]);
 
   return (
     <>
