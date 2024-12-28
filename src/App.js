@@ -4,7 +4,7 @@ import ResultPage from './page/result';
 
 function App() {
   return (
-    <main className="mobile_layout">
+    <main className="mobile_layout relative">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/result" element={<ResultPage />} />

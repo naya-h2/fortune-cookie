@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @font-face {
   font-family: 'Ownglyph_ParkDaHyun';
   src: url('./font/온글잎 박다현체.ttf') format('woff2');
@@ -15,8 +9,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Ownglyph_RyuRyu';
+  src: url('./font/온글잎 류류체.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
-  font-family: 'Ownglyph_ParkDaHyun';
+  font-family: 'Ownglyph_ParkDaHyun', 'Ownglyph_RyuRyu';
   background-color: #ffe7b680;
 }
 
@@ -53,4 +60,21 @@ button {
 
 button:disabled {
   background-color: #d9d9d9;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading_desc {
+  color: rgba(255, 170, 0, 0.5);
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #7d5300;
+}
+
+.fortune_msg {
+  font-family: 'Ownglyph_RyuRyu';
 }
