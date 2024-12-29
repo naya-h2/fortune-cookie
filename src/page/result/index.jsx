@@ -10,7 +10,7 @@ function ResultPage() {
 
   const handleFortunePost = async () => {
     try {
-      const res = await axios.post('http://seolan.me:5000/fortune');
+      const res = await axios.post('http://fortune.seolan.me:5000/fortune');
       if (res.status === 200) {
         setIsLoading(false);
         setData(res.data.fortune);
@@ -22,6 +22,7 @@ function ResultPage() {
   };
 
   useEffect(() => {
+    if (!sessionStorage.getItem('fortune-username')) window.location.href = '/';
     if (isLoading) setTimeout(handleFortunePost, 700);
   }, [isLoading]);
 
