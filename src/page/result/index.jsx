@@ -10,7 +10,7 @@ function ResultPage() {
 
   const handleFortunePost = async () => {
     try {
-      const res = await axios.post('https://fortune.seolan.me:5000/fortune');
+      const res = await axios.post('https://fortune.seolan.me/fortune');
       if (res.status === 200) {
         setIsLoading(false);
         setData(res.data.fortune);
